@@ -1,0 +1,10 @@
+.profile__btn-add {
+  width: 150px;
+  height: 50px;
+  align-self: center;
+  background-color: black;
+  border: 3px solid white;
+  color: rgba(255, 255, 255, 1);
+  font-size: 45px;
+  line-height: 0.2;
+ }

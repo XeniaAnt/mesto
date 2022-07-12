@@ -1,0 +1,5 @@
+.photo__name_long {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}

@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="./pages/index.css">
   <title>Mesto</title>
 </head>
 
@@ -15,6 +15,90 @@
       <img class="header__logo" src="images/Logo.svg" alt="Логотип">
       <hr class="header__line">
     </header>
+
+    <main class="content">
+
+      <section class="profile">
+        <div class="profile__container">
+          <img class="profile__image" src="images/Avatar.jpg" alt="Аватар пользователя">
+          <div class="profile__user-info">
+            <h1 class="profile__name">Жак-Ив Кусто</h1>
+            <p class="profile__subtitle">Исследователь океана</p>
+          </div>
+          <button type="" class="profile__btn-edit">
+            <img class="profile__btn-edit-img" src="./images/btn-edit.svg">
+          </button>
+        </div>
+        <button class="profile__btn-add">&plus;</button>
+      </section>
+
+      <section class="photo" aria-label="Фотокарточки пользователя">
+        <ul class="photo__list">
+          <li class="photo__item">
+            <figure class="photo__block-image">
+              <img class="photo__img" src="images/Karachaevo.jpg" alt="Карачаевск">
+              <figcaption class="photo__caption">
+                <span class="photo__name">Карачаевск</span>
+                <img class="photo__heart photo__heart_active" src="./images/heart.svg">
+              </figcaption>
+            </figure>
+          </li>
+          <li class="photo__item">
+            <figure class="photo__block-image">
+              <img class="photo__img" src="images/Elbrus.jpg" alt="Гора Эльбрус">
+              <figcaption class="photo__caption">
+                <span class="photo__name">Гора Эльбрус</span>
+                <img class="photo__heart photo__heart_active" src="./images/heart.svg">
+              </figcaption>
+            </figure>
+          </li>
+          <li class="photo__item">
+            <figure class="photo__block-image">
+              <img class="photo__img" src="images/Dombay.jpg" alt="Домбай">
+              <figcaption class="photo__caption">
+                <span class="photo__name">Домбай</span>
+                <img class="photo__heart photo__heart_active" src="./images/heart.svg">
+              </figcaption>
+            </figure>
+          </li>
+        </ul>
+        <ul class="photo__list">
+          <li class="photo__item">
+            <figure class="photo__block-image">
+              <img class="photo__img" src="images/Elbrus.jpg" alt="Гора Эльбрус">
+              <figcaption class="photo__caption">
+                <span class="photo__name">Гора Эльбрус</span>
+                <img class="photo__heart photo__heart_active" src="./images/heart.svg">
+              </figcaption>
+            </figure>
+          </li>
+          <li class="photo__item">
+            <figure class="photo__block-image">
+              <img class="photo__img" src="images/Dombay.jpg" alt="Домбай">
+              <figcaption class="photo__caption">
+                <span class="photo__name">Домбай</span>
+                <img class="photo__heart photo__heart_active" src="./images/heart.svg">
+              </figcaption>
+            </figure>
+          </li>
+          <li class="photo__item">
+            <figure class="photo__block-image">
+              <img class="photo__img" src="images/Karachaevo.jpg" alt="Карачаево-Черкесия">
+              <figcaption class="photo__caption">
+                <span class="photo__name photo__name_long">Карачаево-Черкесия</span>
+                <img class="photo__heart photo__heart_active" src="./images/heart.svg">
+              </figcaption>
+            </figure>
+          </li>
+        </ul>
+      </section>
+
+    </main>
+
+    <footer class="footer">
+      <p class="footer__copyright">© 2020 Mesto Russia</p>
+    </footer>
+
 
   </div>
 

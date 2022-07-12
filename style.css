@@ -1,5 +1,4 @@
 .page {
-  max-width: 1280px;
   margin: 0;
   background-color:rgba(0, 0, 0, 1);
   font-family: 'Inter', Arial, Helvetica, sans-serif;
@@ -20,7 +19,130 @@
 }
 
 .header__line {
+  margin: 0;
   margin-top: 36px;
   opacity: 0.3;
   background-color: rgba(84, 84, 84, 1);
 }
+
+.profile {
+  padding-top: 38px;
+  color: rgba(255, 255, 255, 1);
+  display: flex;
+  justify-content: space-between;
+}
+
+.profile__container {
+  display: flex;
+}
+
+.profile__image {
+  max-width: 120px;
+  border-radius: 100px;
+}
+
+.profile__user-info {
+  align-self: center;
+  margin-left: 30px;
+}
+
+.profile__name {
+  margin: 0;
+  font-size: 42px;
+  line-height: 1.14;
+  font-weight: 500;
+}
+
+.profile__subtitle {
+  margin: 0;
+  margin-top: 16px;
+  font-size: 18px;
+  line-height: 0.2;
+  font-weight: 400;
+}
+
+.profile__btn-edit {
+  max-height: 24px;
+  margin-left: 18px;
+  margin-top: 39px;
+  background-color: black;
+  border: 1px solid white;
+}
+
+.profile__btn-add {
+ width: 150px;
+ height: 50px;
+ align-self: center;
+ background-color: black;
+ border: 3px solid white;
+ color: rgba(255, 255, 255, 1);
+ font-size: 45px;
+ line-height: 0.2;
+}
+
+.photo {
+  margin-top: 50px;
+}
+
+.photo__list {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.photo__list:first-of-type {
+  margin-bottom: 20px;
+}
+
+.photo__item {
+  max-width: 282px;
+}
+
+.photo__block-image {
+  margin: 0;
+  background-color: #fff;
+  border-radius: 3%;
+  overflow: hidden;
+}
+
+.photo__img {
+  max-width: 100%;
+}
+
+.photo__caption {
+  min-height: 75px;
+  display: flex;
+  align-items: center;
+  padding: 0 7.5%;
+  justify-content: space-between;
+}
+
+.photo__name {
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 1.2;
+  color:rgba(0, 0, 0, 1);
+}
+
+.photo__name_long {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.footer {
+  margin-top: 67px;
+}
+
+.footer__copyright {
+  font-size: 18px;
+  line-height: 1.2;
+  font-weight: 400;
+  color:rgba(84, 84, 84, 1);
+}
+
+
