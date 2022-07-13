@@ -8,3 +8,7 @@
   font-size: 45px;
   line-height: 0.2;
  }
+
+ .profile__btn-add:hover {
+  opacity: 60%;
+}

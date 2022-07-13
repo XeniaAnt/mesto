@@ -1,10 +1,10 @@
 .page {
   margin: 0;
-  background-color:rgba(0, 0, 0, 1);
-  font-family: 'Inter', Arial, Helvetica, sans-serif;
+  background-color: rgba(0, 0, 0, 1);
+  font-family: "Inter", Arial, Helvetica, sans-serif;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
-  }
+}
 
 .page__container {
   width: 100%;
@@ -69,15 +69,23 @@
   border: 1px solid white;
 }
 
+.profile__btn-edit:hover {
+  opacity: 60%;
+}
+
 .profile__btn-add {
- width: 150px;
- height: 50px;
- align-self: center;
- background-color: black;
- border: 3px solid white;
- color: rgba(255, 255, 255, 1);
- font-size: 45px;
- line-height: 0.2;
+  width: 150px;
+  height: 50px;
+  align-self: center;
+  background-color: black;
+  border: 3px solid white;
+  color: rgba(255, 255, 255, 1);
+  font-size: 45px;
+  line-height: 0.2;
+}
+
+.profile__btn-add:hover {
+  opacity: 60%;
 }
 
 .photo {
@@ -125,12 +133,27 @@
   font-weight: 900;
   font-size: 24px;
   line-height: 1.2;
-  color:rgba(0, 0, 0, 1);
+  color: rgba(0, 0, 0, 1);
 }
 
 .photo__btn {
   background-color: #fff;
   border: none;
+  background-image: url('./images/heart.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: block;
+  width: 22px;
+  height: 19px;
+}
+
+.photo__btn:hover {
+  opacity: 50%;
+}
+
+.photo__btn:active {
+  opacity: 1;
+  background-image: url('./images/active_heart.svg');
 }
 
 .photo__name_long {
@@ -147,7 +170,94 @@
   font-size: 18px;
   line-height: 1.2;
   font-weight: 400;
-  color:rgba(84, 84, 84, 1);
+  color: rgba(84, 84, 84, 1);
 }
 
+.popup {
+  display: none;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+  padding: 195px 546px;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
 
+.popup_opened {
+  display: block;
+}
+
+.popup__container {
+  display: flex;
+  flex-direction: column;
+  width: 430px;
+  height: 330px;
+  border-radius: 3%;
+  background-color: rgba(255, 255, 255, 1);
+  color: black;
+  padding: 0 36px;
+  box-sizing: border-box;
+}
+
+.popup__description {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 900;
+  line-height: 1.2;
+  padding-top: 34px;
+}
+
+.popup__name {
+  display: block;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.9;
+  width: 100%;
+  border: none;
+  margin-top: 30px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.popup__about-user {
+  display: block;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.6;
+  width: 100%;
+  border: none;
+  margin-top: 29px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.popup__btn-save {
+  display: block;
+  width: 100%;
+  border: none;
+  margin-top: 49px;
+  background-color: rgba(0, 0, 0, 1);
+  min-height: 50px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.2;
+  color: rgba(255, 255, 255, 1);
+}
+
+.popup__btn-save:hover {
+  opacity: 80%;
+}
+
+.popup__close {
+  position: relative;
+  width: 32px;
+}
+
+.popup__close-icon {
+  position: absolute;
+  bottom: 8px;
+  left: 439px;
+}
+
+.popup__close-icon:hover {
+  opacity: 60%;
+}

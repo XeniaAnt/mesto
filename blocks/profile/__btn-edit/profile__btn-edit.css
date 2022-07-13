@@ -5,3 +5,7 @@
   background-color: black;
   border: 1px solid white;
 }
+
+.profile__btn-edit:hover {
+  opacity: 60%;
+}
