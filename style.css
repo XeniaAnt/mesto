@@ -128,6 +128,11 @@
   color:rgba(0, 0, 0, 1);
 }
 
+.photo__btn {
+  background-color: #fff;
+  border: none;
+}
+
 .photo__name_long {
   text-overflow: ellipsis;
   white-space: nowrap;

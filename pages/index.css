@@ -20,5 +20,6 @@
 @import url('../blocks/photo/__caption/photo__caption.css');
 @import url('../blocks/photo/__name/photo__name.css');
 @import url('../blocks/photo/__name/_long/photo__name_long.css');
+@import url('../blocks/photo/__btn/photo__btn.css');
 @import url('../blocks/footer/footer.css');
 @import url('../blocks/footer/__copyright/footer__copyright.css');
