@@ -8,6 +8,15 @@
   justify-content: space-between;
 }
 
-.photo__list:first-of-type {
-  margin-bottom: 20px;
+@media (max-width: 1023px) {
+  .photo__list {
+    justify-content: center;
+  }
+}
+
+
+@media (max-width: 767px) {
+  .photo__list {
+    justify-content: center;
+  }
 }

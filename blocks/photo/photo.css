@@ -1,3 +1,9 @@
 .photo {
   margin-top: 50px;
 }
+
+@media (max-width: 767px) {
+  .photo {
+    margin-top: 36px;
+  }
+}

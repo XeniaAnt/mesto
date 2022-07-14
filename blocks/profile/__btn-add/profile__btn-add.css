@@ -12,3 +12,12 @@
  .profile__btn-add:hover {
   opacity: 60%;
 }
+
+@media (max-width: 767px) {
+  .profile__btn-add {
+    min-width: 282px;
+    font-size: 35px;
+    line-height: 1;
+    margin-top: 38px;
+  }
+}

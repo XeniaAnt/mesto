@@ -3,3 +3,9 @@
   opacity: 0.3;
   background-color: rgba(84, 84, 84, 1);
 }
+
+@media (max-width: 767px) {
+  .header__line {
+    margin-top: 26px;
+  }
+}
