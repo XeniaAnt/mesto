@@ -1,17 +1,9 @@
-.popup__close-icon {
-  position: absolute;
-  bottom: 8px;
-  left: 439px;
-}
-
 .popup__close-icon:hover {
   opacity: 60%;
 }
 
 @media (max-width: 767px) {
   .popup__close-icon {
-    bottom: 17px;
-    left: 262px;
     width: 20px;
   }
 }

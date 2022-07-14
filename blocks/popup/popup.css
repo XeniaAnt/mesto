@@ -3,14 +3,9 @@
   background-color: rgba(0, 0, 0, 0.5);
   width: 100%;
   height: 100%;
-  padding: 12.9% 35.8%;
   position: fixed;
-  top: 0;
+  overflow: auto;
   left: 0;
+  top: 0;
 }
 
-@media (max-width: 767px) {
-  .popup {
-    padding: 38.4% 5.9%;
-  }
-}
