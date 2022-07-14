@@ -178,10 +178,11 @@
   background-color: rgba(0, 0, 0, 0.5);
   width: 100%;
   height: 100%;
-  padding: 195px 546px;
   position: fixed;
-  top: 0;
+  overflow: auto;
   left: 0;
+  top: 0;
+
 }
 
 .popup_opened {
@@ -189,6 +190,14 @@
 }
 
 .popup__container {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -215px;
+  margin-top: -165px;
+}
+
+.popup__form {
   display: flex;
   flex-direction: column;
   width: 430px;

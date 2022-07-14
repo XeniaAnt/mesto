@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./pages/index.css">
+  <link rel="stylesheet" href="style.css">
   <title>Mesto</title>
 </head>
 
@@ -103,12 +103,14 @@
 
 <div class="popup popup_opened">
   <div class="popup__close"><img class="popup__close-icon" src="./images/Close-icon.svg"></div>
-  <form class="popup__container">
-    <p class="popup__description">Редактировать профиль<p>
-    <input  class="popup__name" type="text" value="Жак-Ив Кусто">
-    <input class="popup__about-user" type="text" value="Исследователь океана">
-    <input class="popup__btn-save" type="submit" value="Сохранить">
-  </form>
+  <div class="popup__container">
+    <form class="popup__form">
+      <p class="popup__description">Редактировать профиль<p>
+      <input  class="popup__name" type="text" value="Жак-Ив Кусто">
+      <input class="popup__about-user" type="text" value="Исследователь океана">
+      <input class="popup__btn-save" type="submit" value="Сохранить">
+    </form>
+  </div>
 </div>
 
 </body>
