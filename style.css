@@ -207,6 +207,7 @@
   color: black;
   padding: 0 36px;
   box-sizing: border-box;
+
 }
 
 .popup__description {
@@ -257,14 +258,9 @@
 }
 
 .popup__close {
-  position: relative;
-  width: 32px;
-}
-
-.popup__close-icon {
   position: absolute;
-  bottom: 8px;
-  left: 439px;
+  left: 100%;
+  bottom: 100%;
 }
 
 .popup__close-icon:hover {
