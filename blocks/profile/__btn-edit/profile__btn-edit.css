@@ -1,9 +1,14 @@
 .profile__btn-edit {
-  max-height: 24px;
-  margin-left: 18px;
-  margin-top: 39px;
-  background-color: black;
+  margin: 0 0 25px 0;
+  background-color: transparent;
   border: 1px solid white;
+  cursor: pointer;
+  background-image: url("./../../../images/btn-edit.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto;
+  width: 24px;
+  height: 24px;
 }
 
 .profile__btn-edit:hover {
@@ -12,10 +17,8 @@
 
 @media (max-width: 767px) {
   .profile__btn-edit {
-    max-height: 24px;
-    margin-left: 2px;
-    margin-top: 15px;
-    max-width: 20px;
+    width: 18px;
+    height: 18px;
+    margin-left: 10px;
   }
 }
-

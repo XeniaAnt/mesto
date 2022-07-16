@@ -14,9 +14,3 @@
   }
 }
 
-
-@media (max-width: 767px) {
-  .photo__list {
-    justify-content: center;
-  }
-}

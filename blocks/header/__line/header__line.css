@@ -1,7 +1,7 @@
 .header__line {
+  border: 1px solid #545454;
   margin-top: 36px;
-  opacity: 0.3;
-  background-color: rgba(84, 84, 84, 1);
+  opacity: 70%;
 }
 
 @media (max-width: 767px) {
