@@ -13,7 +13,7 @@
 
     <header class="header">
       <img class="header__logo" src="images/Logo.svg" alt="Логотип">
-      <hr class="header__line">
+      <div class="header__line"></div>
     </header>
 
     <main class="content">
@@ -21,15 +21,18 @@
       <section class="profile">
         <div class="profile__container">
           <img class="profile__image" src="images/Avatar.jpg" alt="Аватар пользователя">
-          <div class="profile__user-info">
-            <h1 class="profile__name">Жак-Ив Кусто</h1>
-            <p class="profile__subtitle">Исследователь океана</p>
+          <div class="profile__data-container">
+            <div class="profile__user-info">
+              <h1 class="profile__name">Жак-Ив Кусто</h1>
+              <p class="profile__subtitle">Исследователь океана</p>
+            </div>
+            <button type="button" class="profile__btn-edit"></button>
           </div>
           <button type="button" class="profile__btn-edit">
             <img class="profile__btn-edit-img" src="./images/btn-edit.svg" alt="кнопка редактирования профиля">
           </button>
         </div>
-        <button type="button" class="profile__btn-add">&plus;</button>
+        <button type="button" class="profile__btn-add">+</button>
       </section>
 
       <section class="photo" aria-label="Фотокарточки пользователя">
@@ -38,7 +41,7 @@
             <figure class="photo__block-image">
               <img class="photo__img" src="images/Karachaevo.jpg" alt="Карачаевск">
               <figcaption class="photo__caption">
-                <span class="photo__name">Карачаевск</span>
+                <h2 class="photo__name">Карачаевск</h2>
                 <button type="button" class="photo__btn"></button>
               </figcaption>
             </figure>
@@ -47,7 +50,7 @@
             <figure class="photo__block-image">
               <img class="photo__img" src="images/Elbrus.jpg" alt="Гора Эльбрус">
               <figcaption class="photo__caption">
-                <span class="photo__name">Гора Эльбрус</span>
+                <h2 class="photo__name">Гора Эльбрус</h2>
                 <button type="button" class="photo__btn"></button>
               </figcaption>
             </figure>
@@ -56,7 +59,7 @@
             <figure class="photo__block-image">
               <img class="photo__img" src="images/Dombay.jpg" alt="Домбай">
               <figcaption class="photo__caption">
-                <span class="photo__name">Домбай</span>
+                <h2 class="photo__name">Домбай</h2>
                 <button type="button" class="photo__btn"></button>
               </figcaption>
             </figure>
@@ -65,7 +68,7 @@
             <figure class="photo__block-image">
               <img class="photo__img" src="images/Elbrus.jpg" alt="Гора Эльбрус">
               <figcaption class="photo__caption">
-                <span class="photo__name">Гора Эльбрус</span>
+                <h2 class="photo__name">Гора Эльбрус</h2>
                 <button type="button" class="photo__btn"></button>
               </figcaption>
             </figure>
@@ -74,7 +77,7 @@
             <figure class="photo__block-image">
               <img class="photo__img" src="images/Dombay.jpg" alt="Домбай">
               <figcaption class="photo__caption">
-                <span class="photo__name">Домбай</span>
+                <h2 class="photo__name">Домбай</h2>
                 <button type="button" class="photo__btn"></button>
               </figcaption>
             </figure>
@@ -83,7 +86,7 @@
             <figure class="photo__block-image">
               <img class="photo__img" src="images/Karachaevo.jpg" alt="Карачаево-Черкесия">
               <figcaption class="photo__caption">
-                <span class="photo__name photo__name_long">Карачаево-Черкесия</span>
+                <h2 class="photo__name">Карачаево-Черкесия</h2>
                 <button type="button" class="photo__btn"></button>
               </figcaption>
             </figure>
@@ -94,7 +97,7 @@
     </main>
 
     <footer class="footer">
-      <p class="footer__copyright">© 2020 Mesto Russia</p>
+      <p class="footer__copyright">&#169; 2020 Mesto Russia</p>
     </footer>
 
   </div>
@@ -102,19 +105,19 @@
 <div class="popup">
 
   <div class="popup__container">
-    <form class="popup__form">
-      <p class="popup__description">Редактировать профиль</p>
-      <input class="popup__name" type="text">
-      <input class="popup__about-user" type="text">
-      <input class="popup__btn-save" type="submit" value="Сохранить">
+    <form class="popup__form" name="update_profile" method="post" action="#">
+      <h2 class="popup__title">Редактировать профиль</h2>
+      <input class="popup__input popup__input_name" type="text" name="profile_name">
+      <input class="popup__input popup__input_description" type="text" name="profile_description">
+      <button class="popup__btn-save" type="submit">Сохранить</button>
     </form>
-    <div class="popup__close">
-      <img class="popup__close-icon" src="./images/Close-icon.svg" alt="значок закрытия попапа">
-    </div>
+    <button type="button" class="popup__close">
+      <img class="popup__close-icon" src="./images/Close-icon.svg" alt="кнопка закрытия попапа">
+    </button>
   </div>
 </div>
 
-<script src="./script.js"></script>
+<script src="scripts/script.js"></script>
 </body>
 
 </html>

@@ -1,12 +1,13 @@
 .profile__btn-add {
-  width: 150px;
-  height: 50px;
+  padding: 0 59px;
   align-self: center;
-  background-color: black;
-  border: 3px solid white;
+  background-color: transparent;
+  border: 2px solid white;
   color: rgba(255, 255, 255, 1);
   font-size: 45px;
-  line-height: 0.2;
+  border-radius: 2px;
+  cursor: pointer;
+  line-height: 1;
  }
 
  .profile__btn-add:hover {
@@ -18,6 +19,7 @@
     min-width: 282px;
     font-size: 35px;
     line-height: 1;
-    margin-top: 38px;
+    margin-top: 30px;
+    padding: 6px 59px;
   }
 }

@@ -6,8 +6,17 @@
   box-sizing: border-box;
 }
 
+@media (max-width: 1023px) {
+  .page__container {
+    padding: 30px 27px 40px;
+  }
+}
+
+
 @media (max-width: 767px) {
   .page__container {
     padding: 28px 0 36px;
   }
 }
+
+

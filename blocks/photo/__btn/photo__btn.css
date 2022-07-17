@@ -7,6 +7,7 @@
   display: block;
   width: 23px;
   height: 19px;
+  cursor: pointer;
 }
 
 .photo__btn:hover {

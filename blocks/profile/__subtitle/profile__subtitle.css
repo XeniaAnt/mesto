@@ -1,9 +1,12 @@
 .profile__subtitle {
   margin: 0;
-  margin-top: 16px;
+  margin-top: 7px;
   font-size: 18px;
-  line-height: 0.2;
+  line-height: 1.2;
   font-weight: 400;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 @media (max-width: 767px) {
