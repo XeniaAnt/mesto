@@ -2,8 +2,7 @@
   display: block;
   width: 100%;
   border: none;
-  margin-top: 56px;
-  margin-bottom: 15px;
+  margin: 18px 0 15px;
   background-color: rgba(0, 0, 0, 1);
   min-height: 50px;
   font-weight: 400;
@@ -20,9 +19,9 @@
 
 @media (max-width: 767px) {
   .popup__btn-save {
-    margin-top: 55px;
     margin-bottom: 25px;
     min-height: 46px;
     font-size: 14px;
+    margin-top: 15px;
   }
 }

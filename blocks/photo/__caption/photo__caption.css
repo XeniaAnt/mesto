@@ -1,6 +1,12 @@
 .photo__caption {
   display: flex;
   align-items: center;
-  padding: 8.1% 7.1%;
   justify-content: space-between;
+  padding: 7.5% 7% 9% 7.5%;
+}
+
+@media (max-width: 767px) {
+  .photo__caption {
+    padding-top: 7.2%;
+  }
 }
