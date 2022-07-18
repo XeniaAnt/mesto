@@ -1,8 +1,8 @@
 const btnPopupOpen = document.querySelector('.profile__btn-edit'); // кнопка редактирования профиля
 const btnPopupClose = document.querySelector('.popup__close'); // кнопка закрытия попапа
 const popup = document.querySelector('.popup'); // попап
-const profileNameInput = document.querySelector('.popup__input_name'); // инпут имени в  попапе
-const profileDescriptionInput = document.querySelector('.popup__input_description'); //инпут описания в попапе
+const profileNameInput = document.querySelector('.popup__input_value_name'); // инпут имени в  попапе
+const profileDescriptionInput = document.querySelector('.popup__input_value_description'); //инпут описания в попапе
 const editForm = document.querySelector('.popup__form'); // форма в попапе
 const profileName = document.querySelector('.profile__name'); // имя в профиле на странице
 const profileDescription = document.querySelector('.profile__subtitle'); // описание в профиле на странице

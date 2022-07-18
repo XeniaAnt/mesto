@@ -7,7 +7,7 @@
 }
 
 @media (max-width: 767px) {
-  .popup__title  {
+  .popup__title {
     font-size: 18px;
     padding-top: 25px;
   }

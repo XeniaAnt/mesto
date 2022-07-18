@@ -1,0 +1,11 @@
+.header {
+  border-bottom: 1px solid rgba(84, 84, 84, 0.7);
+  padding-bottom: 36px;
+  opacity: 70%;
+}
+
+@media (max-width: 767px) {
+  .header {
+    padding-bottom: 26px;
+  }
+}

@@ -1,7 +1,7 @@
 .photo__btn {
   background-color: #fff;
   border: none;
-  background-image: url('./../../../images/heart.svg');
+  background-image: url("./../../../images/heart.svg");
   background-repeat: no-repeat;
   background-size: contain;
   display: block;
@@ -16,5 +16,5 @@
 
 .photo__btn:active {
   opacity: 1;
-  background-image: url('./../../../images/active_heart.svg');
+  background-image: url("./../../../images/active_heart.svg");
 }
