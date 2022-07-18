@@ -9,5 +9,7 @@
     align-items: center;
     flex-wrap: wrap;
     justify-content: center;
+    margin: 0 auto;
+    max-width: 90%;
   }
 }
