@@ -1,0 +1,22 @@
+.photo__btn-basket {
+  border: none;
+  background-image: url("./../../../images/basket.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: block;
+  width: 18px;
+  height: 19px;
+  cursor: pointer;
+  background-color: transparent;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.photo__btn-basket:hover {
+  opacity: 60%;
+}
+
+.photo__btn-basket:active {
+  opacity: 1;
+}

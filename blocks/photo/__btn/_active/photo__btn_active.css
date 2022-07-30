@@ -1,0 +1,4 @@
+.photo__btn_active {
+  opacity: 1;
+  background-image: url("./../../../../images/active_heart.svg");
+}

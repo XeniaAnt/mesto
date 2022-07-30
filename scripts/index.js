@@ -18,8 +18,6 @@ const cardNameInput = document.querySelector(".popup__input_value_header"); // �
 const cardLinkInput = document.querySelector(".popup__input_value_link"); //инпут ссылки карточки в попапе
 const editFormCardAdd = document.querySelector(".popup__form_card-add"); // форма в попапе
 
-
-
 // массив фотокарточек
 const initialCards = [
   {
@@ -93,7 +91,7 @@ function cardAdd(evt) {
     link: cardLinkInput.value,
   };
 
-  //вызываем функцию доюавления карточки
+  //вызываем функцию добавления карточки
   addNewCard(element);
   closePopupCardAdd(); //вызываем функцию закрытия попапа
 }
@@ -101,14 +99,21 @@ function cardAdd(evt) {
 //добавление новой карточки
 function addNewCard(element) {
   const initialCard = photoitemTemplate.cloneNode(true).content; //клонируем шаблон фотокарточки в константу
-  const heart = initialCard.querySelector('.photo__btn'); // находим кнопку с сердечком в карточке
+  const heart = initialCard.querySelector(".photo__btn"); // находим кнопку с сердечком в карточке
+  const removeBtn = initialCard.querySelector(".photo__btn-basket"); // находим кнопку удаления карточки
   initialCard.querySelector(".photo__name").textContent = element.name; // меняем заголовок карточки
   initialCard.querySelector(".photo__img").src = element.link; // меняем атрибут ссылки на изменение карточки
 
-  heart.addEventListener('click', function(event) {
+  heart.addEventListener("click", function (event) {
     event.preventDefault(); //  при клике на кнопку сбрасываем все события
-    heart.classList.toggle('photo__btn_active'); // переключаем класс
-  })
+    heart.classList.toggle("photo__btn_active"); // переключаем класс
+  });
+
+  //обработчик события на кнопку удаления карточки
+  removeBtn.addEventListener("click", function (event) {
+    event.preventDefault();
+    event.target.closest(".photo__item").remove();
+  });
 
   photolist.prepend(initialCard); // отображаем на странице
 }
