@@ -32,62 +32,7 @@
       </section>
 
       <section class="photo" aria-label="Фотокарточки пользователя">
-        <ul class="photo__list">
-          <li class="photo__item">
-            <figure class="photo__block-image">
-              <img class="photo__img" src="images/Karachaevo.jpg" alt="Карачаевск">
-              <figcaption class="photo__caption">
-                <h2 class="photo__name">Карачаевск</h2>
-                <button type="button" class="photo__btn"></button>
-              </figcaption>
-            </figure>
-          </li>
-          <li class="photo__item">
-            <figure class="photo__block-image">
-              <img class="photo__img" src="images/Elbrus.jpg" alt="Гора Эльбрус">
-              <figcaption class="photo__caption">
-                <h2 class="photo__name">Гора Эльбрус</h2>
-                <button type="button" class="photo__btn"></button>
-              </figcaption>
-            </figure>
-          </li>
-          <li class="photo__item">
-            <figure class="photo__block-image">
-              <img class="photo__img" src="images/Dombay.jpg" alt="Домбай">
-              <figcaption class="photo__caption">
-                <h2 class="photo__name">Домбай</h2>
-                <button type="button" class="photo__btn"></button>
-              </figcaption>
-            </figure>
-          </li>
-          <li class="photo__item">
-            <figure class="photo__block-image">
-              <img class="photo__img" src="images/Elbrus.jpg" alt="Гора Эльбрус">
-              <figcaption class="photo__caption">
-                <h2 class="photo__name">Гора Эльбрус</h2>
-                <button type="button" class="photo__btn"></button>
-              </figcaption>
-            </figure>
-          </li>
-          <li class="photo__item">
-            <figure class="photo__block-image">
-              <img class="photo__img" src="images/Dombay.jpg" alt="Домбай">
-              <figcaption class="photo__caption">
-                <h2 class="photo__name">Домбай</h2>
-                <button type="button" class="photo__btn"></button>
-              </figcaption>
-            </figure>
-          </li>
-          <li class="photo__item">
-            <figure class="photo__block-image">
-              <img class="photo__img" src="images/Karachaevo.jpg" alt="Карачаево-Черкесия">
-              <figcaption class="photo__caption">
-                <h2 class="photo__name">Карачаево-Черкесия</h2>
-                <button type="button" class="photo__btn"></button>
-              </figcaption>
-            </figure>
-          </li>
-        </ul>
+        <ul class="photo__list"></ul>
       </section>
 
     </main>
@@ -112,6 +57,18 @@
       </button>
     </div>
   </div>
+
+  <template class="photo__item-template">
+    <div class="photo__item">
+      <figure class="photo__block-image">
+        <img class="photo__img" src="images/Karachaevo.jpg" alt="Карачаевск">
+        <figcaption class="photo__caption">
+          <h2 class="photo__name">Карачаевск</h2>
+          <button type="button" class="photo__btn"></button>
+        </figcaption>
+      </figure>
+    </div>
+  </template>
 
   <script src="scripts/index.js"></script>
 </body>
