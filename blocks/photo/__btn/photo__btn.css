@@ -15,7 +15,8 @@
   opacity: 50%;
 }
 
-.photo__btn:active {
+.photo__btn:active,
+.photo__btn_active {
   opacity: 1;
   background-image: url("./../../../images/active_heart.svg");
 }
