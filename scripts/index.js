@@ -17,6 +17,10 @@ const btnPopupCardAddClose = popupCardAdd.querySelector(".popup__close"); // к�
 const cardNameInput = document.querySelector(".popup__input_value_header"); // инпут названия карточки в  попапе
 const cardLinkInput = document.querySelector(".popup__input_value_link"); //инпут ссылки карточки в попапе
 const editFormCardAdd = document.querySelector(".popup__form_card-add"); // форма в попапе
+const popupPhoto = document.querySelector(".popup__photo"); // попап открытия фотографии
+const popupName = popupPhoto.querySelector('.popup__name'); // название фотографии в попапе
+const popupPhotoImg = popupPhoto.querySelector('.popup__img'); // фотография в попапе
+const btnPopupPhotoClose = popupPhoto.querySelector(".popup__close"); /// кнопка закрытия попапа открытия фотографии
 
 // массив фотокарточек
 const initialCards = [
@@ -115,6 +119,17 @@ function addNewCard(element) {
     event.target.closest(".photo__item").remove();
   });
 
+  // обработчик события на клик по фотографии
+  initialCard.querySelector('.photo__img').addEventListener('click', function(event) { // ищем элемент изображения в фотокарточках и навешиваем на него обработчик события по клику
+    event.preventDefault(); // сбрасываем все события по клику
+    const name = event.target.nextElementSibling.querySelector('.photo__name').textContent; // находим имя фотокарточки
+    const img = event.target.src; // достаем ссылку на фотокарточку
+
+    popupPhoto.classList.add("popup_opened"); // добавляем класс popup_opened попапу для видимости
+    popupName.textContent = name; //заменяем в попапе имя на имя найденной фотокарточки
+    popupPhotoImg.src = img; // заменяем в попапе картинку
+  });
+
   photolist.prepend(initialCard); // отображаем на странице
 }
 
@@ -125,3 +140,7 @@ editForm.addEventListener("submit", updateProfile); // обработчик со
 btnPopupCardAddOpen.addEventListener("click", openPopupCardAdd); // обработчик события клика по кнопке редактирования профиля
 btnPopupCardAddClose.addEventListener("click", closePopupCardAdd); // обработчик события клика по кнопке закрытия попапа
 editFormCardAdd.addEventListener("submit", cardAdd); // обработчик события отправки формы сохранения профиля
+
+btnPopupPhotoClose.addEventListener("click", function() { // закрываем попап с фотографией по клику
+  popupPhoto.classList.remove("popup_opened");
+});
