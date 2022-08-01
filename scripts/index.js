@@ -52,7 +52,8 @@ const initialCards = [
 
 //функция для отображения массива объектов на странице
 initialCards.forEach(function (element) {
-  addNewCard(element);
+  const card = createCard(element);
+  renderCard(card, photolist);
 });
 
 // функция открытия попапа
@@ -83,8 +84,9 @@ function submitAddCardForm(evt) {
     link: cardLinkInput.value,
   };
 
-  //вызываем функцию добавления карточки
-  addNewCard(element);
+  const card = createCard(element); // получаем шаблон карточки
+  renderCard(card, photolist);// отрисовываем карточку в списке карточек
+
   closePopup(popupCardAdd);
   cardNameInput.value = '';
   cardLinkInput.value = '';
@@ -95,7 +97,7 @@ function renderCard(card, container) {
 }
 
 //добавление новой карточки
-function addNewCard(element) {
+function createCard(element) {
   const initialCard = photoitemTemplate.cloneNode(true).content; //клонируем шаблон фотокарточки в константу
   const heart = initialCard.querySelector(".photo__btn"); // находим кнопку с сердечком в карточке
   const removeBtn = initialCard.querySelector(".photo__btn-basket"); // находим кнопку удаления карточки
@@ -124,7 +126,7 @@ function addNewCard(element) {
     popupPhotoImg.src = img; // заменяем в попапе картинку
   });
 
-  renderCard(initialCard, photolist);
+  return initialCard;
 }
 
 btnPopupProfileOpen.addEventListener("click", function() {
